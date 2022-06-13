@@ -10,12 +10,12 @@ const HomeScreen = () => {
 
     useEffect(() => {
         const fetchMovies = () => {
-            fetch("https://imdb-api.com/en/API/SearchMovie/k_39hk0qsg/spiderman").then(data => {
+            fetch("https://imdb-api.com/en/API/SearchMovie/k_se3l6coa/hobbit").then(data => {
                 return data.json();
             }).then(data => setMovies(data.results));
         };
         fetchMovies();
-    }, []);
+    }, [movies]);
 
 
     return (

@@ -6,7 +6,7 @@ const VideoPlayer = () => {
 
     useEffect(() => {
         const fetchTrailer = () => {
-            fetch('https://imdb-api.com/API/Trailer/k_39hk0qsg/' + id).then(data => {
+            fetch('https://imdb-api.com/API/Trailer/k_se3l6coa/' + id).then(data => {
                 return data.json();
             }).then(data => {
                 setTrailerLink(() => data.linkEmbed);
